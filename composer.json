@@ -1,0 +1,37 @@
+{
+    "name": "wmgbit/laravel-models-migration",
+    "description": "Put Laravel migration definitions inside models, and keep them synchronized with the database",
+    "type": "library",
+    "keywords": [
+        "database",
+        "laravel",
+        "migration",
+        "models",
+        "synchronization"       
+    ],    
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WMG\\Migration\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "g.Wessim"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "doctrine/dbal": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WMG\\Migration\\ServiceProvider"
+            ]            
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
